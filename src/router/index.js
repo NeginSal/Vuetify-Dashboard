@@ -5,6 +5,8 @@ import Billing from '../views/Billing.vue'
 import Support from '../views/Support.vue'
 import Affiliate from '../views/Affiliate.vue'
 import Account from '../views/Account.vue'
+import Newpage from '../components/Newpage.vue'
+
 
 Vue.use(VueRouter)
 
@@ -37,7 +39,13 @@ const routes = [
     name: 'Account',
     component: Account
 
-  }
+  },
+  
+  {
+    path: '/newpage',
+    name: 'Newpage',
+    component: Newpage
+  },
 ]
 
 const router = new VueRouter({

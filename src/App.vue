@@ -1,18 +1,24 @@
 <template>
   <v-app >
+      
       <Navbar />
       <v-content class="mx-5 my-5">
-        <router-view></router-view>
+        <router-view><Newpage /></router-view>
       </v-content>
   </v-app>
-</template>
+</template> 
 
 <script>
 import Navbar from '@/components/Navbar'
+import Newpage from '@/components/Newpage'
+
 
 export default {
   name: 'App',
-  components:{ Navbar },
+  components:{ 
+  Navbar,
+  Newpage },
+  
   data: () => ({
     //
   }),
